@@ -12,10 +12,10 @@ const ActiveInvestments = () => {
     { id: 3, name: 'SIP Fund', type: 'SIP', amount: 5000, frequency: 'Monthly' },
   ])
 
-  const handleModify = (id) => {
+  const handleModify = (id: number) => {
     // Implement modify logic
-    console.log('Modify investment', id)
-  }
+    console.log('Modify investment', id);
+  };
 
   return (
     <Card>

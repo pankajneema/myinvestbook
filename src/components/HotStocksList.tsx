@@ -12,12 +12,12 @@ const HotStocksList = () => {
     { id: 3, name: 'MSFT', price: 300, change: 1.8 },
   ])
 
-  const handleBuy = (id) => {
+  const handleBuy = (id: number) => {
     // Implement buy logic
     console.log('Buy stock', id)
   }
 
-  const handleSell = (id) => {
+  const handleSell = (id: number) => {
     // Implement sell logic
     console.log('Sell stock', id)
   }

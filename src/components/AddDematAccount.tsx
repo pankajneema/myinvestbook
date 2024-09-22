@@ -11,17 +11,12 @@ const AddDematAccount = () => {
     AccountType: '',
   })
 
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prevData => ({ ...prevData, [name]: value }))
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     // Implement form submission logic
-    console.log('Form submitted', formData)
-  }
-
+    console.log('Form submitted', formData);
+  };
+  
   return (
     <Card className="mt-6">
       <CardHeader>
